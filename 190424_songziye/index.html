@@ -1,0 +1,24 @@
+p<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script>
+			<script type="text/javascript">
+			//1、var a=[2,4,{x:2,y:3},true,[5,6]];判断a中的元素是否全为数字类型		----用every()和some()方法实现
+			var a = [2,4,{x:2,y:3},true,[5,6]];
+			
+			var b = a.every(item =>{				//遍历数组每一项，若全部为true，则返回true
+				return typeof(item) === "number";
+			});
+			console.log('用every方法测试是否全为数字类型得出' + b);							//false
+			
+			var c = a.some(item =>{					//遍历数组的每一项，若其中一项为 true，则返回true
+				return typeof(item) === "number";
+			});
+			console.log('用some方法测试是否全为数字类型得出' + c);							//true
+		</script>
+	</body>
+</html>
