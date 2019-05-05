@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>0505</title>
+	</head>
+	<body>
+		<script>
+			//使用构造函数的方式声明一个对象，属性和方法自定义，注意this的指向
+			function f (name,age,job) {
+				this.name = name;
+				this.age = age;
+				this.job = job;
+				this.add = function () { 
+					console.log(this.name + this.age + this.job);
+				}
+			};
+			var obj = new f ('宋子叶', '17岁' , '学生');
+			obj.add();
+		</script>
+	</body>
+</html>
