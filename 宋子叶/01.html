@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>01</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//1、找出数组nums=[23,41,56,90,63,71,96]中的素数为[23,41, 71]；
+			 var arr = [23,41,56,90,63,71,96];
+		     for(var i=0;i<arr.length;i++){
+		        for(var j=2;j<arr[i];j++){
+		            if(arr[i]%j==0){
+		                break;
+		            }
+		        }
+		        if(j === arr[i]){
+		            console.log(arr[i]);
+		        }
+		    }
+		</script>
+	</body>
+</html>

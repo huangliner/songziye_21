@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>06</title>
+	</head>
+	<body>
+		<script>
+			function Student(){
+				var age=22;
+				function addAge(){
+					age++;
+					alert(age);
+				}
+				return addAge;
+			}
+			var fn=Student();
+			fn();
+			/*
+			 闭包的好处：
+			希望一个变量长期存储在内存中。
+			避免全局变量的污染。
+			私有成员的存在。
+			*/
+			/*
+			闭包的缺点：
+			常驻内存，增加内存使用量。使用不当会很容易造成内存泄露。
+			*/
+
+		</script>
+	</body>
+</html>
